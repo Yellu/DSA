@@ -6,13 +6,9 @@ import kotlin.random.Random
 
 class MusicPlayer {
     private val musicList = ArrayList<Song>()
-    private var musicQ: Queue<Song> = LinkedList<Song>()
+    private var musicQ: Queue<Song> = LinkedList()
     private var totalSongCount = 0
     private var random: Random = Random
-
-    internal fun initPlayer() {
-        println("Initialize music player")
-    }
 
     internal fun addSong(id: Int, singer: String, songName: String, type: Genre) {
         musicList.add(totalSongCount++, Song(id, songName, singer, type))
@@ -39,7 +35,6 @@ class MusicPlayer {
                     println("The song : ${songX.songName} is currently played")
                 }
                 musicList.add(songX)
-                return
             }
         }
 
@@ -52,10 +47,8 @@ class MusicPlayer {
                 } else {
                     println("The song : ${songX.songName} is currently played")
                 }
-                return
             }
         }
-        return
     }
 
     internal fun closeMusicPlayer() {
