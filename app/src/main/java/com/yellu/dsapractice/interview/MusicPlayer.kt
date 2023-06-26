@@ -1,4 +1,4 @@
-package com.yellu.dsapractice.dsa
+package com.yellu.dsapractice.interview
 
 import java.util.LinkedList
 import java.util.Queue

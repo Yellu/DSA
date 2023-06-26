@@ -1,4 +1,4 @@
-package com.yellu.dsapractice.dsa
+package com.yellu.dsapractice.interview
 
 fun main() {
     val musicPlayer = MusicPlayer()

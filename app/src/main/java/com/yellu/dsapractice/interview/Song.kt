@@ -1,4 +1,4 @@
-package com.yellu.dsapractice.dsa
+package com.yellu.dsapractice.interview
 
 class Song (
     val songId: Int,
