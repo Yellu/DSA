@@ -1,7 +1,7 @@
 package com.yellu.dsapractice.leetcode.easy.linkedlist
 
 class DeleteNode {
-    internal fun deleteNode(head: Node, delete: Node) {
+    internal fun deleteNode(head: ListNode, delete: ListNode) {
         var currentNode = head
         while (currentNode.next != null) {
             if (currentNode.data == delete.data) {
@@ -12,7 +12,7 @@ class DeleteNode {
             }
         }
 
-        var temp: Node? = head
+        var temp: ListNode? = head
         while (temp != null){
             println(temp.data)
             temp = temp.next
