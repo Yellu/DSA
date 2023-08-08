@@ -1,6 +1,6 @@
 package com.yellu.dsapractice.leetcode.easy.tree
 
-class TreeNode(val data: Int) {
-    var leftTree: TreeNode? = null
-    var rightTree: TreeNode? = null
+class TreeNode(val `val`: Int) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
 }
