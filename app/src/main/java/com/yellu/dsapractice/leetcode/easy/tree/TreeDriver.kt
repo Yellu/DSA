@@ -39,7 +39,13 @@ fun main() {
 //    println(isSym)
 
 
+    val array = intArrayOf(-10, -3, 0, 5, 9)
+
+    val arrayToBST = ArrayToBST()
+    val result = arrayToBST.sortedArrayToBST(array)
+
     val levelOrderTraversal = LevelOrderTraversal()
-    val result = levelOrderTraversal.printLevelOrder(root)
-    println(result)
+    val finalResult = levelOrderTraversal.printLevelOrder(result)
+    println(finalResult)
+
 }
